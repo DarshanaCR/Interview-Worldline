@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>,
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/2bbac3a66c.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <form  id="create-account-form" action="result.js" method="GET">
+        
+        <div class="title">
+            <h2>Create Account</h2>
+        </div>
+        <!-- NAME -->
+        <div class="input-group">
+            <label for="username">First Name</label>
+            <input type="text" id="firstname" placeholder="First Name" name="firstname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <div class="input-group">
+            <label for="username">Last Name</label>
+            <input type="text" id="lastname" placeholder="Last Name" name="lastname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" name="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!--DOB-->
+        <div class="input-group">
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" placeholder="Date of Birth" name="dob">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+
+        <!--Gender-->
+        <div class="input-group">
+            <label for="gender">Gender</label>
+            <br>
+            <input type="radio" id="gender" placeholder="Gender" name="gender" value="male">Male<br>
+            <input type="radio" id="gender" placeholder="Gender" name="gender" value="female">Female<br>
+            <input type="radio" id="gender" placeholder="Gender" name="gender" value="Do not prefer to say">Do not prefer to say<br/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!--ADDRESS LINE 1-->
+        <div class="input-group">
+            <label for="address">Address line 1</label>
+            <input type="text" id="address1" placeholder="address line 1" name="address">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!--ADDRESS LINE 2-->
+        <div class="input-group">
+            <label for="address">Address line 2</label>
+            <input type="text" id="address2" placeholder="address line 2" name="address">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!--CITY-->
+        <div class="input-group">
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Chennai">Chennai</option>
+                <option value="Avadi">Avadi</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Salem">Salem</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Salem">Salem</option>
+                <option value="Thrichy">Trichy</option>
+            </select>
+        </div>
+
+        <!--STATE-->
+        <div class="input-group">
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Orissa">Orissa</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        
+        <!--POSTAL-->
+        <div class="input-group">
+            <label for="Postal code">Postal code</label>
+            <input id="zip" name="zip" type="text" inputmode="numeric">
+        </div>
+
+        
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>
